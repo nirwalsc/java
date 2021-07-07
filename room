@@ -1,0 +1,40 @@
+package p1;
+
+public class Room {
+
+	
+		       int roomno; 
+		       String roomtype;   
+		       float roomarea;   
+		       boolean acmachine;  
+		       void setData(int rno, String rt, float area, boolean ac)  
+		       {   
+		    	   roomno = rno;  
+		    	   roomtype = rt;   
+		    	   roomarea = area; 
+		    	   acmachine = ac;     
+		    	   }   
+		       void displayData()  
+		       { 
+		    	   System.out.println("The room no is "   + roomno); 
+		    	   System.out.println ("The room Type is "  + roomtype);
+		    	   System.out.println ("The room area is "   + roomarea); 
+		    	   String s = (acmachine)  ? "yes " : "no "; 
+		    	   System.out.println ("Need for ac "  + s);   
+		    	   } 
+		       public static void main(String args[])   {    
+		    	   Room room1 = new Room ( );
+		    	   Room room2 = new Room ( );
+
+		    	   
+		    	   room1. setData (1001, "deluxe", 320f, true);  
+		    	   room2. setData (2001, "single bed", 220f, false);  
+
+		    	   room1.displayData ( );
+		    	   room2.displayData ( );
+
+		    	   
+		    	   
+	}
+
+}
